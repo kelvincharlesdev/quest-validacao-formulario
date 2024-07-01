@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de formulário</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+
+        <section class="description">
+            <h1 class="title">FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
+            <p class="suporte">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </section>
+
+        <form class="form" id="form">
+            <div class="input-content">
+                <input type="text" class="campo" id="username" placeholder="Nome completo *">
+
+                <p class="obrigatorio">campo obrigatório</p>
+            </div>
+
+            <div class="input-content">
+                <input type="email" class="campo" id="email" placeholder="Email *" >
+                <p class="obrigatorio">campo obrigatório</p>
+            </div>
+
+            <div class="input-content">
+                <input class="campo" id="phone" type="number" placeholder="Telefone *">
+                <p class="obrigatorio">campo obrigatório</p>
+            </div>
+
+            <div class="input-content">
+                <textarea class="campo" id="message" rows="6" placeholder="Mensagem*"></textarea> 
+
+                <p class="obrigatorio">campo obrigatório</p>
+            </div>
+            <p class="campo-obrigatorio">*campos obrigatórios</p>
+
+            <button id="btn" type="submit">Enviar</button>
+
+        </form>
+
+    </main>
+
+    <script type="text/javascript" src="./src/js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../img/bg-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 11px;
+    color: #ffffff;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 900;
+
+}
+
+.suporte {
+    font-size: 15px;
+}
+
+.form{
+    width: 340px;
+    min-height: 378px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 22px;
+}
+
+.input-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    max-width: 298px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding-left: 11px;
+    font-size: 15px;
+    outline: none;
+
+}
+
+.campo::placeholder{
+    font-size: 15px;
+    font-weight: 700;
+    color: #A8A8A8;
+ 
+}
+
+#message{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: 11px;
+  
+}
+
+
+
+#btn{
+    max-width: 298px;
+    width: 100%;
+    height: 41px;
+    background-color: #3CCC87;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* input com erro */ 
+
+.obrigatorio{
+    font-size: 8px;
+    color: #F52E2E;
+    visibility: hidden;
+}
+
+.input-content.error .obrigatorio{
+    visibility: visible;
+}
+
+.input-content.error .campo{
+    border-color: #F52E2E;
+}
+
+.input-content.correct .campo{
+    border-color: #00C22B;
+}
+
+
