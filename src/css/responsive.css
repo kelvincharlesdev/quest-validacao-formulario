@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    
+    }
+}
